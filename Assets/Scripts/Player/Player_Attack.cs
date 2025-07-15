@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class Player_Attack : MonoBehaviour
 {
+    Player_Status _Player_status;
     public GameObject bulletPrefab;
     public Transform firePoint;
 

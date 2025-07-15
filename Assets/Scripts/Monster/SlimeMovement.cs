@@ -13,6 +13,7 @@ public class SlimeMovement : MonoBehaviour
     bool isChasingPlayer = false;
     void Start()
     {
+        player = GameObject.FindWithTag("Player");
         playerPos = player.GetComponent<Transform>();
         startPos = GetComponent<Transform>().position;
     }

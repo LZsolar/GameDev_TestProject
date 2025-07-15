@@ -17,8 +17,8 @@ public class Player_Status : MonoBehaviour
     {
         
     }
-    void enterCombat() { isInCombat = true; print("FIGHT"); }
-    void exitCombat(){ isInCombat = false; health = maxHealth; ArcanePower = MaxArcanePower; print("ESCAPE"); }
+    void enterCombat() { isInCombat = true; }
+    void exitCombat(){ isInCombat = false; health = maxHealth; ArcanePower = MaxArcanePower; }
 
     public void updateCombatStatus(bool _isInCombat) {
         if(_isInCombat) { enterCombat(); }
