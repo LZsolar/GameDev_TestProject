@@ -11,15 +11,16 @@ public class SlimeMovement : MonoBehaviour
     [SerializeField] float SpeedEnermy = 5;
     [SerializeField] float distance;
     bool isChasingPlayer = false;
-    void Start()
+    void Awake()
     {
+        startPos = GetComponent<Transform>().position;
         player = GameObject.FindWithTag("Player");
         playerPos = player.GetComponent<Transform>();
-        startPos = GetComponent<Transform>().position;
     }
 
     void Update()
     {
+        print(startPos);
         // Moving Toward Player
         if(Vector2.Distance(transform.position, playerPos.position) < distance)
         {
@@ -55,4 +56,6 @@ public class SlimeMovement : MonoBehaviour
         player.GetComponent<Player_Status>().updateCombatStatus(isChasingPlayer);
     }
     void changeChasingStatus() { isChasingPlayer = !isChasingPlayer; }
+    public void resetStartPosition(Vector2 newStartPos) { startPos.y = newStartPos.y; startPos.x = newStartPos.x;}
+    public Vector2 getStartPosition() { return startPos; }
 }

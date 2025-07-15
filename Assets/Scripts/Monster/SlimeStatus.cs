@@ -22,10 +22,7 @@ public class SlimeStatus : MonoBehaviour
         {
             if(!isMiniSlime)
             {
-                GameObject miniClone = Instantiate(slimePrefab, transform.position, Quaternion.identity);
-                miniClone.transform.localScale = miniClone.transform.localScale * 0.5f;
-                miniClone.GetComponent<SlimeStatus>().setSlimeMaxHealth(5);
-                miniClone.GetComponent<SlimeStatus>().setSlimeMini();
+                spawnMiniSlime();
             }
             Destroy(this.gameObject);
         }
@@ -46,4 +43,14 @@ public class SlimeStatus : MonoBehaviour
 
     public void setSlimeMaxHealth(float _hp) { maxHealth = _hp; health = maxHealth; }
     public void setSlimeMini() { isMiniSlime = true; }
+
+    public void spawnMiniSlime()
+    {
+        GameObject miniClone = Instantiate(slimePrefab, transform.position, Quaternion.identity);
+        miniClone.transform.localScale = miniClone.transform.localScale * 0.5f;
+        SlimeStatus _ministatus = miniClone.GetComponent<SlimeStatus>();
+        _ministatus.setSlimeMaxHealth(5);
+        _ministatus.setSlimeMini();
+        miniClone.GetComponent<SlimeMovement>().resetStartPosition(this.gameObject.GetComponent<SlimeMovement>().getStartPosition());
+    }
 }

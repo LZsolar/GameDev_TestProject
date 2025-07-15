@@ -11,3 +11,6 @@ Basic player attack(30 Min)
 Enermy movement (30min)
 
 * Having troble detect combat state
+
+Detect combat state + minislime spawning after death (1hr)
+
