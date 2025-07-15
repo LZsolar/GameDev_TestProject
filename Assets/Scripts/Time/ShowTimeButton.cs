@@ -7,31 +7,30 @@ public class ShowTimeButton : MonoBehaviour
     public GameObject ConfirmButton;
     [SerializeField] int TimeToChange = 0;
     public TimeCotroller _TimeController;
+    bool isPlayerInside = false;
 
-
-    void OnCollisionEnter2D(Collision2D collision)
+    void OnTriggerEnter2D(Collider2D col)
     {
-        print("YAHOOO");
-       if(collision.gameObject.tag == "Player")
+       if(col.gameObject.tag == "Player")
         {
-            ShowConfirmButton();
-            print("Enter!");
+            ShowConfirmButton(); isPlayerInside = true;
         }
     }
 
-    void OnCollisionStay2D(Collision2D collision)
+    private void Update()
     {
-        if (collision.gameObject.tag == "Player"&&Input.GetKeyDown(KeyCode.E))
+        if(isPlayerInside && Input.GetKeyDown(KeyCode.E))
         {
             _TimeController.setTime(TimeToChange);
         }
     }
 
-    void OnCollisionExit2D(Collision2D collision)
+
+    void OnTriggerExit2D(Collider2D col)
     {
-        if (collision.gameObject.tag == "Player")
+        if (col.gameObject.tag == "Player")
         {
-            HideConfirmButton();
+            HideConfirmButton(); isPlayerInside = false;
         }
     }
 
