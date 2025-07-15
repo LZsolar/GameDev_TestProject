@@ -11,19 +11,11 @@ public class SlimeStatus : MonoBehaviour
 
     public GameObject slimePrefab;
 
-    void Start()
-    {
-       
-    }
-
     void Update()
     {
         if(health <= 0)
         {
-            if(!isMiniSlime)
-            {
-                spawnMiniSlime();
-            }
+            if(!isMiniSlime){ spawnMiniSlime();}
             Destroy(this.gameObject);
         }
     }

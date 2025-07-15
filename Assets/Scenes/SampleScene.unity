@@ -802,7 +802,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _InGameDayCount: 0
-  currentTime: 0
+  currentTimePeriod: 0
 --- !u!4 &766944401
 Transform:
   m_ObjectHideFlags: 0
@@ -2105,6 +2105,10 @@ PrefabInstance:
     - target: {fileID: 8470139222622703537, guid: 6f4de26c153a8344dbea62631e55e94a, type: 3}
       propertyPath: m_Name
       value: Slime
+      objectReference: {fileID: 0}
+    - target: {fileID: 8470139222622703537, guid: 6f4de26c153a8344dbea62631e55e94a, type: 3}
+      propertyPath: m_TagString
+      value: Enermy
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

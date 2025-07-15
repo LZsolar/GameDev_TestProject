@@ -20,11 +20,10 @@ public class SlimeMovement : MonoBehaviour
 
     void Update()
     {
-        print(startPos);
         // Moving Toward Player
         if(Vector2.Distance(transform.position, playerPos.position) < distance)
         {
-            transform.position = Vector2.MoveTowards(transform.position, playerPos.position, SpeedEnermy * Time.deltaTime);
+            ChasePlayer();
             if (!isChasingPlayer)
             {
                 changeChasingStatus();
@@ -41,7 +40,7 @@ public class SlimeMovement : MonoBehaviour
             //Retreat
             else
             {
-                transform.position = Vector2.MoveTowards(transform.position, startPos, SpeedEnermy * Time.deltaTime);
+                backToSpawn();
                 if (isChasingPlayer)
                 {
                     changeChasingStatus();
@@ -49,6 +48,14 @@ public class SlimeMovement : MonoBehaviour
                 }
             }
         }
+    }
+    void ChasePlayer()
+    {
+        transform.position = Vector2.MoveTowards(transform.position, playerPos.position, SpeedEnermy * Time.deltaTime);
+    }
+    void backToSpawn()
+    {
+        transform.position = Vector2.MoveTowards(transform.position, startPos, SpeedEnermy * Time.deltaTime);
     }
 
     void noticePlayerCombatStatus()

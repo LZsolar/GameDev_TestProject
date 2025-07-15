@@ -8,18 +8,18 @@ public class TimeCotroller : MonoBehaviour
     [SerializeField] int _InGameDayCount = 0;
     string[] Day_Name = { "MON", "TUE", "WED", "THU", "FRI", "SAT", "SUN" };
     
-    [SerializeField] int currentTime = 0; //0 = Morning, 1 = Afternoon, 2 = Evening
+    [SerializeField] int currentTimePeriod = 0; //0 = Morning, 1 = Afternoon, 2 = Evening
     string[] Time_Name = { "Morning","Afternoon","Evening" };
 
     public void setTime(int TimeToChange)
     {
-        if(TimeToChange < currentTime) { _InGameDayCount++; }
-        currentTime = TimeToChange;
+        if(TimeToChange < currentTimePeriod) { _InGameDayCount++; }
+        currentTimePeriod = TimeToChange;
     }
 
     public string GetTimeOfTheDay()
     {
-        return Time_Name[currentTime];
+        return Time_Name[currentTimePeriod];
     }
 
     public string GetDayOfTheWeek()

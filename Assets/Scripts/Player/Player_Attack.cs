@@ -8,11 +8,17 @@ public class Player_Attack : MonoBehaviour
     public GameObject bulletPrefab;
     public Transform firePoint;
 
+    private void Awake()
+    {
+        _Player_status = GetComponent<Player_Status>();
+    }
+
     void Update()
     {
-        if (Input.GetMouseButtonDown(0)) // Left click
+        if (Input.GetMouseButtonDown(0)) 
         {
             Shoot();
+            reducePlayerAP(5);
         }
     }
 
@@ -25,4 +31,5 @@ public class Player_Attack : MonoBehaviour
         bullet.GetComponent<Ammo>().SetDirection(shootDirection);
 
     }
+    void reducePlayerAP(float _reduceNumber) { _Player_status.reduceAP(_reduceNumber); }
 }

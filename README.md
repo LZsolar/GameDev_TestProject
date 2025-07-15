@@ -14,3 +14,5 @@ Enermy movement (30min)
 
 Detect combat state + minislime spawning after death (1hr)
 
+adjust combat script + health system(40 min)
+

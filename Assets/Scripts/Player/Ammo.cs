@@ -13,9 +13,9 @@ public class Ammo : MonoBehaviour
         damage = Random.Range(3, 5);
     }
 
-    public void SetDirection(Vector2 dir)
+    public void SetDirection(Vector2 _direction)
     {
-        direction = dir.normalized;
+        direction = _direction.normalized;
         Destroy(gameObject, lifetime);
     }
 

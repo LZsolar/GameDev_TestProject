@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Floor
   - Ammo
+  - Enermy
   layers:
   - Default
   - TransparentFX
