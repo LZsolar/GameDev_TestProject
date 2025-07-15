@@ -10,7 +10,7 @@ public class TimeCotroller : MonoBehaviour
     
     [SerializeField] int currentTime = 0;
     int _TimeOfTheDay = 0; //0 = Morning, 1 = Afternoon, 2 = Evening
-    string[] Time_Name = { "Morning","Afernoon","Evening" };
+    string[] Time_Name = { "Morning","Afternoon","Evening" };
 
     public void setTime(int TimeToChange)
     {
