@@ -1,6 +1,6 @@
 Basic setup (10 min)
 Time system design (15 min)
-Imprement Time system(1 hr)
+Implement Time system(1 hr)
 
 In game collider for Time system(45min)
 
@@ -8,11 +8,11 @@ In game collider for Time system(45min)
 
 Basic player attack(30 Min)
 
-Enermy movement (30min)
+Enemy movement (30min)
 
-* Having troble detect combat state
+* Having trouble detect combat state
 
-Detect combat state + minislime spawning after death (1hr)
+Detect combat state + minislime spawning after death (1 hr)
 
 adjust combat script + health system(40 min)
 
@@ -30,7 +30,11 @@ from now, learning from this tutorial https://youtu.be/oJAE6CbsQQA?si=DbsIyHM7y\
 
 -> Item bin
 
+Approx Time for everything related to inventory (5 hr)
 
+
+
+Making player can attack only in combat
 
 
 

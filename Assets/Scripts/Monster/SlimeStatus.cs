@@ -4,18 +4,23 @@ using UnityEngine;
 
 public class SlimeStatus : MonoBehaviour
 {
+    SlimeMovement _slimemovement;
     [SerializeField] float health = 20;
     float maxHealth = 20;
     float slimeDamage = 1;
     bool isMiniSlime = false;
 
     public GameObject slimePrefab;
-
+    private void Start()
+    {
+        _slimemovement = GetComponent<SlimeMovement>();
+    }
     void Update()
     {
         if(health <= 0)
         {
             if(!isMiniSlime){ spawnMiniSlime();}
+            _slimemovement.changeChasingStatus();
             Destroy(this.gameObject);
         }
     }

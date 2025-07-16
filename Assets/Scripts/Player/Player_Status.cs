@@ -25,7 +25,7 @@ public class Player_Status : MonoBehaviour
 
     void enterCombat() { isInCombat = true; }
     void exitCombat(){ isInCombat = false; resetStatus(); }
-
+    public bool getCombatstatus() { return isInCombat; }
     public void updateCombatStatus(bool _isInCombat) {
         if(_isInCombat) { enterCombat(); }
         else { exitCombat(); }
@@ -45,4 +45,7 @@ public class Player_Status : MonoBehaviour
         resetStatus();
         resetPosition();
     }
+
+    public float getPlayerHP() { return health; }
+    public float getPlayerAP() { return ArcanePower;}
 }

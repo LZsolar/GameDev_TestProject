@@ -27,7 +27,6 @@ public class SlimeMovement : MonoBehaviour
             if (!isChasingPlayer)
             {
                 changeChasingStatus();
-                noticePlayerCombatStatus();
             }
         }
         else
@@ -44,7 +43,6 @@ public class SlimeMovement : MonoBehaviour
                 if (isChasingPlayer)
                 {
                     changeChasingStatus();
-                    noticePlayerCombatStatus();
                 }
             }
         }
@@ -58,11 +56,14 @@ public class SlimeMovement : MonoBehaviour
         transform.position = Vector2.MoveTowards(transform.position, startPos, SpeedEnermy * Time.deltaTime);
     }
 
-    void noticePlayerCombatStatus()
+    public void noticePlayerCombatStatus()
     {
         player.GetComponent<Player_Status>().updateCombatStatus(isChasingPlayer);
     }
-    void changeChasingStatus() { isChasingPlayer = !isChasingPlayer; }
+    public void changeChasingStatus() { 
+        isChasingPlayer = !isChasingPlayer;
+        noticePlayerCombatStatus();
+    }
     public void resetStartPosition(Vector2 newStartPos) { startPos.y = newStartPos.y; startPos.x = newStartPos.x;}
     public Vector2 getStartPosition() { return startPos; }
 }

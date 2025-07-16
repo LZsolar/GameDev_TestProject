@@ -15,7 +15,7 @@ public class Player_Attack : MonoBehaviour
 
     void Update()
     {
-        if (Input.GetMouseButtonDown(0)) 
+        if (Input.GetMouseButtonDown(0) && _Player_status.getCombatstatus() &&_Player_status.getPlayerAP() > 0) 
         {
             Shoot();
             reducePlayerAP(5);
