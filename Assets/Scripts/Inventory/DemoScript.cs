@@ -5,6 +5,7 @@ using UnityEngine;
 public class DemoScript : MonoBehaviour
 {
    public InventoryManager inventoryManager;
+    public CraftingManager craftingManager;
     public Item[] itemsToPickup;
     bool isInventoryOpen = false;
     public GameObject inventoryMenu;
@@ -23,6 +24,10 @@ public class DemoScript : MonoBehaviour
     public void usedIten()
     {
         inventoryManager.GetSelectedItem(true);
+    }
+    public void craftIten(int id)
+    {
+        craftingManager.crafting(itemsToPickup[id]);
     }
     public void ToggleInventory()
     {

@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -12,13 +13,21 @@ public class Item : ScriptableObject
     public ActionType actionType;
     public Vector2Int range = new Vector2Int(5, 4);
 
+    public CraftPlace craftPlace;
+    public List<CraftingIngredient> ingredients;
+
     [Header("Only UI")]
     public int stackableCount;
 
     [Header("Both")]
     public Sprite image;
 }
-
+[Serializable]
+public class CraftingIngredient
+{
+    public Item itemID;
+    public int amount;
+}
 public enum Itemtype
 {
     Resources = 1,
@@ -32,4 +41,13 @@ public enum ActionType
     usable = 2,
     placeable = 3
 }
+public enum CraftPlace
+{
+    None = 0,
+    Everywhere = 1,
+    CraftingTable = 2,
+    Fernence = 3
+}
+
+
 

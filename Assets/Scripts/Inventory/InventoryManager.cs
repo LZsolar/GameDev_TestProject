@@ -70,6 +70,36 @@ public class InventoryManager : MonoBehaviour
         return false;
     }
 
+    public bool DeleteItem(Item item,int deleteAmount)
+    {
+        int maxStackedItems = item.stackableCount;
+        for (int i = 0; i < inventorySlots.Length; i++)
+        {
+            InventorySlot slot = inventorySlots[i];
+            InventoryItem itemInSlot = slot.GetComponentInChildren<InventoryItem>();
+            if (itemInSlot != null && itemInSlot.item == item && itemInSlot.count >= deleteAmount)
+            {
+                itemInSlot.count-= deleteAmount;
+                itemInSlot.RefreshCount();
+                return true;
+            }
+        }
+        return false;
+    }
+    public int FindItemInSlot(Item item)
+    {
+        for (int i = 0; i < inventorySlots.Length; i++)
+        {
+            InventorySlot slot = inventorySlots[i];
+            InventoryItem itemInSlot = slot.GetComponentInChildren<InventoryItem>();
+            if (itemInSlot != null && itemInSlot.item == item)
+            {
+                return itemInSlot.count;
+            }
+        }
+        return 0;
+    }
+
     void SpawnNewItem(Item item, InventorySlot slot)
     {
         GameObject newItemGo = Instantiate(inventoryItemPrefeb, slot.transform);

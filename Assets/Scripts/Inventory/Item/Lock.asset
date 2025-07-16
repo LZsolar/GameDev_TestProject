@@ -16,5 +16,9 @@ MonoBehaviour:
   type: 3
   actionType: 3
   range: {x: 5, y: 4}
+  craftPlace: 1
+  ingredients:
+  - itemID: {fileID: 11400000, guid: e798fd6c7872c3c43893442535c93978, type: 2}
+    amount: 5
   stackableCount: 5
   image: {fileID: -1269068981, guid: b152979c031e45342b632eb1b778ffc2, type: 3}
