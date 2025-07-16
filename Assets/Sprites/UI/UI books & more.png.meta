@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: cb3f38ff6d514f848bf0a3f94d812a51
+guid: 8e023a59abb25a24bb0966ce6c372974
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -110,97 +110,97 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Idle_0
+      name: UI books & more_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 231
-        height: 190
+        x: 482
+        y: 34
+        width: 12
+        height: 12
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8c538382d8316e042ae0c66d452021d5
-      internalID: -1891700045
+      spriteID: b4ec06ee755e97342bb4dfc8892c8ac3
+      internalID: 975691674
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Idle_1
+      name: UI books & more_3
       rect:
         serializedVersion: 2
-        x: 231
-        y: 0
-        width: 231
-        height: 190
+        x: 721
+        y: 369
+        width: 46
+        height: 46
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 31fbfa71f160e74488bd8fdc30ad4e0e
-      internalID: 1988765635
+      spriteID: aee5827168be3ed4a8d578c319d6ffe5
+      internalID: -621748841
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Idle_2
+      name: UI books & more_1
       rect:
         serializedVersion: 2
-        x: 462
-        y: 0
-        width: 231
-        height: 190
+        x: 80
+        y: 192
+        width: 32
+        height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7614f529a168a814083d07077a38f85d
-      internalID: -1514000786
+      spriteID: ae47354b179387542b6edcf69976401f
+      internalID: 1602864203
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Idle_3
+      name: UI books & more_2
       rect:
         serializedVersion: 2
-        x: 693
-        y: 0
-        width: 231
-        height: 190
+        x: 16
+        y: 208
+        width: 16
+        height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6617d90ff35fcab46a4328b06da635a7
-      internalID: 710710249
+      spriteID: 2463e8fb28607fe45bfeefccf9838b73
+      internalID: -1706123205
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Idle_4
+      name: UI books & more_4
       rect:
         serializedVersion: 2
-        x: 924
-        y: 0
-        width: 231
-        height: 190
+        x: 673
+        y: 289
+        width: 14
+        height: 14
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -208,20 +208,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6be7f00f046e8774fa12e08711cef9a7
-      internalID: -582407260
+      spriteID: 0e1e8ef74fd7ae94cb67b2f4ccbbb33d
+      internalID: -1267561196
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Idle_5
+      name: UI books & more_5
       rect:
         serializedVersion: 2
-        x: 1155
-        y: 0
-        width: 231
-        height: 190
+        x: 641
+        y: 290
+        width: 14
+        height: 10
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -229,8 +229,71 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: bd42add3854db3946a63fc2a02a295fb
-      internalID: 220650937
+      spriteID: bcbe9e960942a7e4d9675268f01fffbf
+      internalID: 544075897
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI books & more_6
+      rect:
+        serializedVersion: 2
+        x: 644
+        y: 242
+        width: 8
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 46f199512438f7748a8170639f9720c9
+      internalID: 126591623
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI books & more_7
+      rect:
+        serializedVersion: 2
+        x: 769
+        y: 417
+        width: 46
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6a665e0dadbbc9e4aaeecdfa378af18d
+      internalID: -1934367419
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI books & more_8
+      rect:
+        serializedVersion: 2
+        x: 401
+        y: 257
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e41d54dd555c12648b34e49fbf430e80
+      internalID: -240225528
       vertices: []
       indices: 
       edges: []
@@ -246,12 +309,15 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Idle_0: -1891700045
-      Idle_1: 1988765635
-      Idle_2: -1514000786
-      Idle_3: 710710249
-      Idle_4: -582407260
-      Idle_5: 220650937
+      UI books & more_0: 975691674
+      UI books & more_1: 1602864203
+      UI books & more_2: -1706123205
+      UI books & more_3: -621748841
+      UI books & more_4: -1267561196
+      UI books & more_5: 544075897
+      UI books & more_6: 126591623
+      UI books & more_7: -1934367419
+      UI books & more_8: -240225528
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

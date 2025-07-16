@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 2dc8428b090ad2146a8c582c8b55c8b3
+guid: 67bcac10bd9fbca439f44ea65c71bfe8
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -110,43 +110,85 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Jump_0
+      name: Time & weather_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 231
-        height: 190
+        x: 150
+        y: 321
+        width: 31
+        height: 10
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4024fd525588833499fa3ce3c5fa8480
-      internalID: -1585604552
+      spriteID: 89e8d04a87b02394fa50d4d1ee31d1a3
+      internalID: -1464487475
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Jump_1
+      name: Time & weather_2
       rect:
         serializedVersion: 2
-        x: 231
-        y: 0
-        width: 231
-        height: 190
+        x: 223
+        y: 222
+        width: 50
+        height: 49
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5ac3d88364981c24ab643ec29aaea49e
-      internalID: 1637588068
+      spriteID: b7351e687228afc4f87374ff8b3ddf3a
+      internalID: 6451699
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Time & weather_6
+      rect:
+        serializedVersion: 2
+        x: 273
+        y: 221
+        width: 47
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7466dd23cbc589447b2fc4777ff00b01
+      internalID: -905450965
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Time & weather_7
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 174
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 227c6f330cccf0c49be1ef4bd4baff18
+      internalID: 1675731650
       vertices: []
       indices: 
       edges: []
@@ -162,8 +204,14 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Jump_0: -1585604552
-      Jump_1: 1637588068
+      Time & weather_0: -1464487475
+      Time & weather_1: 422801254
+      Time & weather_2: 6451699
+      Time & weather_3: 1678675113
+      Time & weather_4: 120544650
+      Time & weather_5: -745543566
+      Time & weather_6: -905450965
+      Time & weather_7: 1675731650
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

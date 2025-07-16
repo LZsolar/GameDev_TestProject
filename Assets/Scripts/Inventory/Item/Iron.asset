@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 04bae6a1a1537c4458acb74ee6938cf1, type: 3}
+  m_Name: Iron
+  m_EditorClassIdentifier: 
+  tile: {fileID: 0}
+  type: 1
+  actionType: 2
+  range: {x: 5, y: 4}
+  stackableCount: 64
+  image: {fileID: 544075897, guid: 8e023a59abb25a24bb0966ce6c372974, type: 3}
