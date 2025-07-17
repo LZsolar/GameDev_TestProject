@@ -20,7 +20,7 @@ public class SlimeStatus : MonoBehaviour
         if(health <= 0)
         {
             if(!isMiniSlime){ spawnMiniSlime();}
-            _slimemovement.changeChasingStatus();
+            _slimemovement.noticePlayerCombatStatus(false);
             Destroy(this.gameObject);
         }
     }

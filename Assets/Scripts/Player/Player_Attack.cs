@@ -7,19 +7,23 @@ public class Player_Attack : MonoBehaviour
     Player_Status _Player_status;
     public GameObject bulletPrefab;
     public Transform firePoint;
-
+    Animator animator;
     private void Awake()
     {
         _Player_status = GetComponent<Player_Status>();
+        animator = GetComponent<Animator>();
     }
 
     void Update()
     {
-        if (Input.GetMouseButtonDown(0) && _Player_status.getCombatstatus() &&_Player_status.getPlayerAP() > 0) 
+        if (Input.GetMouseButtonDown(0) && _Player_status.getCombatstatus() && _Player_status.getPlayerAP() > 0)
         {
             Shoot();
             reducePlayerAP(5);
+            animator.SetBool("isAttacking", true);
         }
+        else { animator.SetBool("isAttacking", false); }
+
     }
 
     void Shoot()

@@ -34,7 +34,7 @@ public class Player_Status : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        if(collision.gameObject.tag == "Enermy") { takeDamage(collision.gameObject.GetComponent<SlimeStatus>().GetEnermyDamage()); }
+        if(collision.gameObject.tag == "Enemy") { takeDamage(collision.gameObject.GetComponent<SlimeStatus>().GetEnermyDamage()); }
     }
     void takeDamage(float _damage) { health -= _damage; }
     

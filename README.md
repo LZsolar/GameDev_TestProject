@@ -36,21 +36,25 @@ Making player can attack only in combat
 
 
 
-
+crafting system design (1 hr)
 
 add where item can be craft
 
-
+crafting system (1 hr)
 
 
 
 \[ Things that can still improve ]
 
+* Fining something in inventory require full loop every time
+
+Idea -> having something similar to C++Dictionary/map to keep track of item player have separately
+
 * drag and drop to stack item
 
-Suggestion -> add code that check when drop if it can be stack
+Idea -> add code that check when drop if it can be stack
 
 * Craft when material is enough but in separate slot
 
-Suggestion -> loop check if all the material in inventory is enough and loop again to delete item
+Idea -> loop check if all the material in inventory is enough and loop again to delete item
 

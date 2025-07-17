@@ -14,22 +14,28 @@ public class Player_Movement : MonoBehaviour
     public LayerMask groundLayer;
 
     private Rigidbody2D rb;
+    public Animator animator;
     private bool isGrounded;
 
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
+        animator = GetComponent<Animator>();
     }
 
     void Update()
     {
         float moveInput = Input.GetAxisRaw("Horizontal");
         rb.velocity = new Vector2(moveInput * moveSpeed, rb.velocity.y);
+        animator.SetFloat("Horizontal", moveInput);
+        animator.SetFloat("Walkspeed", Mathf.Abs(moveInput));
+
 
         if (Input.GetKeyDown("space") && isGrounded)
         {
             rb.velocity = new Vector2(rb.velocity.x, jumpForce);
             isGrounded = false;
+            animator.SetBool("isJumping", true);
         }
     }
 
@@ -37,6 +43,7 @@ public class Player_Movement : MonoBehaviour
     {
         if(col.gameObject.tag == "Floor") { 
             isGrounded=true;
+            animator.SetBool("isJumping", false);
         }
     }
 
